@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'App.apps.AppConfig',
+    'tinymce'
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,9 @@ STATICFILES_DIRS=[
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'static/icons')
 MEDIA_URL_PREFIX='/static/icons/'
+
+TINYMCE_DEFAULT_CONFIG = {
+    "theme":"advanced",
+    'width':"800",
+    "height":"600"
+}

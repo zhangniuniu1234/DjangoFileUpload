@@ -93,5 +93,10 @@ def login(request):
         return HttpResponse("登陆成功")
 
 
-
+def blog_editor(request):
+    if request.method=='GET':
+        return render(request, 'BlogEditor.html')
+    elif request.method=='POST':
+        print(request.POST.get("content"))
+        return HttpResponse("提交成功")
 
