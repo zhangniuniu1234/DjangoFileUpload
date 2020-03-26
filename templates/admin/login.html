@@ -1,0 +1,10 @@
+
+{% extends 'admin/login.html' %}
+{% load static %}
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block branding %}
+    <h1 id="site_name"><a href="" id="site_name_color">管理系统</a></h1>
+{% endblock %}

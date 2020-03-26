@@ -17,7 +17,14 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 from App import urls as app_urls
+from Two import urls as two_urls
+from Two.admin import site
+
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    # url(r'^admin/', admin.site.urls),
+    url(r'^admin/', site.urls),
+
     url(r'^app/',include(app_urls,namespace='app')),
+    url(r'^two/', include(two_urls)),
+
 ]

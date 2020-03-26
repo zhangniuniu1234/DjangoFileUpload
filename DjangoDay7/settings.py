@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'App.apps.AppConfig',
-    'tinymce'
+    'tinymce',
+    'Two.apps.TwoConfig'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,8 @@ WSGI_APPLICATION = 'DjangoDay7.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dayseven',
+        # 'NAME': 'dayseven',
+        'NAME':'djangoweb',
         'USER': 'root',
         'PASSWORD': "niu19971022",
         'HOST': '127.0.0.1',
